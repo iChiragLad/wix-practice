@@ -1,0 +1,3 @@
+D:\Do not touch\WiX practice\Learning\StartMenuShortcut\bin\Debug\cab1.cab
+D:\Do not touch\WiX practice\Learning\StartMenuShortcut\bin\Debug\StartMenuShortcut.msi
+D:\Do not touch\WiX practice\Learning\StartMenuShortcut\bin\Debug\StartMenuShortcut.wixpdb

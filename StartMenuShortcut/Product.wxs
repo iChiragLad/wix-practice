@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+	<Product Id="*" Name="Cool Software Installer" Language="1033" Version="1.0.0.0" Manufacturer="Cool Software Ltd." UpgradeCode="fbeae9c2-4231-48af-8ba3-79985815423b">
+		<Package InstallerVersion="200" Compressed="yes" InstallScope="perMachine" />
+
+		<MajorUpgrade DowngradeErrorMessage="A newer version of [ProductName] is already installed." />
+		<MediaTemplate />
+    
+    <UIRef Id ="WixUI_Minimal"/>
+		
+    <Feature Id="ProductFeature" Title="StartMenuShortcut" Level="1">
+			<ComponentGroupRef Id="ProductComponents" />
+		</Feature>
+	</Product>
+
+	<Fragment>
+		<Directory Id="TARGETDIR" Name="SourceDir">
+			<Directory Id="ProgramFilesFolder">
+				<Directory Id="INSTALLFOLDER" Name="Cool Software" />
+			</Directory>
+      <Directory Id ="StartMenuFolder">
+        <Directory Id="CoolSoftwareStartMenu" Name="Cool Software Data"/>
+      </Directory>
+		</Directory>
+	</Fragment>
+  
+</Wix>

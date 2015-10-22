@@ -1,0 +1,7 @@
+D:\Do not touch\WiX practice\Learning\StartMenuShortcut\bin\Debug\cab1.cab
+D:\Do not touch\WiX practice\Learning\StartMenuShortcut\bin\Debug\StartMenuShortcut.msi
+D:\Do not touch\WiX practice\Learning\StartMenuShortcut\bin\Debug\StartMenuShortcut.wixpdb
+obj\Debug\Product.wixobj
+obj\Debug\StartMenuShortcut.wixproj.BindContentsFileListnull.txt
+obj\Debug\StartMenuShortcut.wixproj.BindOutputsFileListnull.txt
+obj\Debug\StartMenuShortcut.wixproj.BindBuiltOutputsFileListnull.txt

@@ -1,0 +1,4 @@
+D:\Do not touch\WiX practice\Installer Data\PPT.pptx
+D:\Do not touch\WiX practice\Installer Data\Dorronto.txt
+D:\Do not touch\WiX practice\Installer Data\Important.txt
+D:\Do not touch\WiX practice\Installer Data\WordDoc.docx

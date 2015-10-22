@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+    <Fragment>
+      <ComponentGroup Id="ProductComponents">
+        <Component Id="cmp1E1281DBFE66FF1A5E87CCDD120107CE" Directory="INSTALLFOLDER" Guid="300098BE-4CC0-47B9-A770-6A79F0EC7E2F">
+          <File Id="fil5665846BA8662FFA0009BB9BB92E79AF" KeyPath="yes" Source="$(var.ProductComponentsSource)\Dorronto.txt" />
+        </Component>
+        <Component Id="cmp33C2451B2E8A71BB94A659BB24529D30" Directory="INSTALLFOLDER" Guid="768222A1-C321-4341-81BD-6AB9ADBBE1C6">
+          <File Id="fil890CADDF3E741DE521ECB124DD9B59C3" KeyPath="yes" Source="$(var.ProductComponentsSource)\Important.txt" />
+        </Component>
+        <Component Id="cmp6BDD49D35A529045696F47C9A14677C1" Directory="INSTALLFOLDER" Guid="B7707EF4-5008-44D3-AC43-0CDB680435DD">
+          <File Id="fil1665173F892D19509FCF92A3611D8274" KeyPath="yes" Source="$(var.ProductComponentsSource)\PPT.pptx" />
+        </Component>
+        <Component Id="cmp4CD26A48B3C2F3D18760D711D069F28F" Directory="INSTALLFOLDER" Guid="09CAD288-FFA0-4F1C-B730-AE604D6AD201">
+          <File Id="filCBC5439F537EB2B32E2DEBA484D3AD73" KeyPath="yes" Source="$(var.ProductComponentsSource)\WordDoc.docx" />
+        </Component>
+
+        <Component Id="CMP_Shortcut" Guid="6ACC4C7E-E9EE-4DB0-9148-591DCE05075A" Directory="CoolSoftwareStartMenu">
+          <Shortcut Id="SHT_Cool_Software" Name="Important" Target="[INSTALLFOLDER]Important.txt"/>
+          <RemoveFolder Id="CoolSoftwareStartMenu" On="uninstall"/>
+          <RegistryValue Root="HKCU" Key="Software\Microsoft\Cool Software" Name="installed" Type="integer" Value="1" KeyPath="yes"/>
+        </Component>
+        
+      </ComponentGroup>
+    </Fragment>
+</Wix>
